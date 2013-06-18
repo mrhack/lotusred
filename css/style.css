@@ -1,0 +1,216 @@
+/* reset css */
+html, body, p , h1, h2, h3, h4, h5, h6,
+ul, li, ol, dl, dd, dt,
+form, fieldset, legend, img {
+    margin  : 0;
+    padding : 0;
+}
+p{margin-top:1em;}
+section, article, nav, header, footer { display : block; }
+address, caption, cite, code, dfn, th, var,i,em {
+    font-style  : normal;
+    font-weight : normal;
+}
+table,tr,td{
+  padding: 0;
+}
+em, i { font-weight : normal; }
+table         { border-collapse : collapse;  border-spacing: 0;}
+fieldset, img { border : none; }
+ul, ol        { list-style : none; }
+select, input { vertical-align : middle; outline : none; }
+h1, h2, h3, h4, h5, strong, em { font-weight : normal; }
+h1,h2{font-size: 1.5em;}
+h3{font-size: 1.17em;}
+h4,h5,h6{font-size: 1em;}
+select, input, textarea {
+    font-size   : 100%;
+    margin      : 0;
+    padding     : 0;
+    outline     : none;
+    font-family : arial, sans-serif;
+}
+textarea {
+    resize   : none;
+    overflow : auto;
+    word-break : break-all;
+    word-wrap  : break-word;
+}
+body {
+    font: 12px/20px STHeiti,arial,simsun,sans-serif;
+    background: url(../img/bg.jpg) center 0;
+}
+img,a,div,span{
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+a:link, a:visited , a:hover , a:active {
+  text-decoration: none;
+}
+
+a:focus {
+    outline : none;
+}
+a {
+  color: inherit;
+  *color: #909090;
+}
+.clearfix {
+    *zoom : 1;
+}
+.clearfix::after {
+    content : ' ';
+    display : block;
+    clear   : both;
+    height  : 0;
+}
+.fr {float:right;}
+.fl {float:left;}
+
+header{
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 20px;
+    position: relative;
+}
+header .logo{ position: absolute;top: 50px;left: 200px;}
+header .lang{ position: absolute;top: 0px;right: 0px; color: white;background: black;padding:2px 10px;}
+header nav a{
+    display: block;
+    background: black;
+    padding: 5px 10px;
+    margin: 3px 0;
+    float: left;
+    color: white;
+    clear: left;
+}
+header nav a:hover , header nav a.selected{background: red;}
+
+.bred{background: #e13b34;background: rgba(255,0,0,.7);}
+.bgry{background: #53524c;background: rgba(63,56,55,.7);}
+.main{color: white;width: 1000px; margin: 0 auto;margin-top: 30px;}
+
+/***** common style for slider ****/
+.main .bx-wrapper .bx-pager.bx-default-pager a:hover,
+.main .bx-wrapper .bx-pager.bx-default-pager a.active{
+    background: white;
+}
+.main .bx-wrapper .bx-prev,.main .bx-wrapper .bx-next{
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    margin-top: -22px;
+    background: url(../img/slider.png) no-repeat center 0; width: 50px; height: 50px;}
+.main .bx-wrapper .bx-prev:hover,.main .bx-wrapper .bx-next:hover{
+    background-color:#ddd;background-color: rgba(0,0,0,.3);
+}
+.main .bx-wrapper .bx-prev{left: -65px;}
+.main .bx-wrapper .bx-prev:hover{background-position: center 0;}
+.main .bx-wrapper .bx-next{right: -65px;background-position: center -50px;}
+.main .bx-wrapper .bx-next:hover{background-position: center -50px;}
+
+/** main - events **/
+.main-events{width: 840px;margin: 0 auto;height: 250px;}
+.events-slider{overflow: hidden;}
+.events-slider li{background: red;}
+.events-slider li img{float: right;}
+.events-slider li article{padding: 20px;}
+.events-slider li article h2{text-transform: uppercase;font-size: 18px;font-weight: bolder;}
+.events-slider li article .date{font-size: 16px;text-transform: uppercase;margin:10px 0; color: #e0e0e0;}
+.main-events .bx-pager{display: none;}
+
+/** index-list **/
+.amet-list{
+    width: 472px;
+    float: left;
+    height: 100%;
+    overflow: hidden;
+}
+.amet-list li{padding:20px;height:88px;}
+.amet-list li h2{margin-bottom: 10px;}
+.amet-list li h2 em{float:right;color: #eee;}
+.main-index{height:256px;}
+.main-index .slider-bar{height:100%;float:left;margin-left: 20px;width:2px;background: white;position: relative;}
+.main-index .slider-btn{position:absolute;cursor:n-resize;width: 11px;height:45px;background: red;margin-left:-5px;}
+/**main-offers**/
+.main-offers{
+    width: 840px ;
+    margin: 0 auto;
+}
+.main-offers > div{
+    width: 360px;
+    padding: 30px;
+    background: rgba(0,0,0,0.5);
+    float: left;
+}
+.main-offers > div:first-child{background: rgba(255,0,0,0.5);}
+.main-offers h2{font-size:21px;text-align: center;text-transform: uppercase;}
+.main-offers .date{font-size:16px;color:#eee; text-align: center;padding: 15px; border-bottom: 3px solid white; }
+
+/***main-photos***/
+.main-photos {
+    background: rgba( 0 , 0 ,0 , .5);
+    width: 528px;
+    padding: 20px;
+}
+.main-photos img{
+    width: 85px;
+    height: 85px;
+    border: 3px solid #ac1916;
+    margin: 6px;
+}
+.main-photos .bx-wrapper{margin: 0 auto 20px;}
+.main-photos .bx-wrapper img{display: inline-block;}
+.main-photos .bx-wrapper .bx-pager{bottom: -24px;}
+.main-photos .bx-wrapper .bx-viewport{background: none;border:none;
+    -webkit-box-shadow:none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    left: 0;
+}
+.main-photos .bx-controls-direction{display: none;}
+/***main-press***/
+.main-press li{text-align: center;}
+.main-press .bx-wrapper img{margin:0 25px; display: inline-block;}
+.main-press .bx-wrapper .bx-viewport{background: none;border:none;
+    -webkit-box-shadow:none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    left: 0;
+}
+.main-press .bx-wrapper .bx-prev{
+    left: -15px;
+}
+.main-press .bx-wrapper .bx-next{
+    right: -15px;
+}
+
+/***main-contact**/
+.main-contact > div{
+    width: 260px;
+    height: 140px;
+    margin-right: 22px;
+    padding: 30px 25px;
+}
+.main-contact h3{
+    font-size: 33px;
+    margin-bottom: 30px;
+}
+.main-contact p{
+    margin-top: 0.5em;
+}
+
+footer{background: rgba(255,0,0,0.9); padding: 30px 0;position: fixed; bottom:0; width: 100%;}
+footer .footer{width: 1000px;margin:0 auto;color: #eee;}
+footer .share{
+    float: right;
+}
+footer .address , footer .tel{ float:left; margin:0 20px;}
+footer .share .facebook , footer .share .twitter{float:right; width: 16px;height:16px;background: url(../img/share.png) no-repeat;}
+footer .share .twitter{background-position: -20px 0;margin-left: 3px;}
