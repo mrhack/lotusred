@@ -38,7 +38,6 @@ textarea {
 }
 body {
     font: 12px/20px STHeiti,arial,simsun,sans-serif;
-    background: url(../img/bg.jpg) center 0;
 }
 img,a,div,span{
     -moz-user-select: -moz-none;
@@ -158,8 +157,8 @@ header nav a:hover , header nav a.selected{background: red;}
     padding: 20px;
 }
 .main-photos img{
-    width: 85px;
-    height: 85px;
+    width: 84px;
+    height: 84px;
     border: 3px solid #ac1916;
     margin: 6px;
 }

@@ -113,7 +113,7 @@ define(function(require, exports, module) {
                     var height = $con.height();
                     var conHeight = 0;
                     $con.children().each(function(){
-                        conHeight += $(this).height();
+                        conHeight += $(this).outerHeight();
                     });
                     var moveEvent = function( pageY ){
                         var value = Math.max( Math.min( pageY - off.top , max ) , min );
