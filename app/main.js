@@ -30,7 +30,7 @@ define(function(require, exports, module) {
                 setTimeout(function(){
                     if( !supportHashChangeEvent )
                         renderHash(t.getAttribute('href').replace(/[^#]*/ , ''));
-                } , 100);
+                } , 10);
             });
         var renderHash = function( hash ){
             hash = hash || '#index';
@@ -45,6 +45,7 @@ define(function(require, exports, module) {
                 .addClass('selected');
             var $main = $('.main')
                 .children()
+                .stop( true )
                 .filter(':visible')
                 .fadeOut(500)
                 .end()
