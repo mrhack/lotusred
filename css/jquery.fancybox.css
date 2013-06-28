@@ -27,8 +27,17 @@
 .fancybox-skin {
 	position: relative;
 	background: rgba(228,30,38,0.8);
+	filter   : progid:DXImageTransform.Microsoft.gradient(startColorStr='#CCE41E26',EndColorStr='#CCE41E26');
+    -ms-filter : progid:DXImageTransform.Microsoft.gradient(startColorStr='#CCE41E26',EndColorStr='#CCE41E26');
+    zoom: 1;
 	color: #fff;
 	text-shadow: none;
+}
+.fancybox-skin > div{
+	color: #fff;
+}
+.fancybox-inner{
+	*min-width : 800px;
 }
 
 .fancybox-opened {

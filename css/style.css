@@ -111,7 +111,7 @@ header nav a{
     font-size:14px;
 }
 header nav a:hover , header nav a.selected{background: #981f26;}
-
+article{color:white;}
 .bred{background: rgba(228,30,38,.7);
 
     filter   : progid:DXImageTransform.Microsoft.gradient(startColorStr='#B2E41E26',EndColorStr='#B2E41E26');
@@ -124,6 +124,7 @@ header nav a:hover , header nav a.selected{background: #981f26;}
     -ms-filter : progid:DXImageTransform.Microsoft.gradient(startColorStr='#B23F3837',EndColorStr='#B23F3837');
     zoom: 1;
 }
+.bred a , .bgry a{color:white;}
 .main{color: white;width: 900px; margin: 0 auto;margin-top: 30px;padding:0 50px;}
 
 /***** common style for slider ****/
