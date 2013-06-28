@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'CHANLPlain';
+    src: url('channels.eot');
+    src: url('channels.eot') format('embedded-opentype'),
+         url('channels.woff') format('woff'),
+         url('channels.ttf') format('truetype'),
+         url('channels.svg#CHANLPlain') format('svg');
+}

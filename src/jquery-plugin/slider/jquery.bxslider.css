@@ -30,12 +30,7 @@
 ===================================*/
 
 .bx-wrapper .bx-viewport {
-    -moz-box-shadow: 0 0 5px #ccc;
-    -webkit-box-shadow: 0 0 5px #ccc;
-    box-shadow: 0 0 5px #ccc;
-    border: solid #fff 5px;
     left: -5px;
-    background: #fff;
 }
 
 .bx-wrapper .bx-pager,
@@ -80,13 +75,13 @@
     background: #666;
     text-indent: -9999px;
     display: block;
-    width: 10px;
-    height: 10px;
+    width: 6px;
+    height: 6px;
     margin: 0 5px;
     outline: 0;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
 }
 
 .bx-wrapper .bx-pager.bx-default-pager a:hover,

@@ -24,6 +24,12 @@ seajs.config({
         src: '../jquery-plugin/bgstretcher-2/bgstretcher',
         deps: ['jquery' , '../bgstretcher-2/bgstretcher.css']
     }
+      ,"jquery.fancybox" : {
+          src: '../jquery-plugin/slider/jquery.fancybox.pack'
+      }
+      ,"jquery.cloudzoom" : {
+          src: '../cloudzoom/cloudzoom'
+      }
   }
   ,
   alias : {
