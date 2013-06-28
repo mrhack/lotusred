@@ -26,9 +26,10 @@ define(function(require, exports, module) {
         });
         var $navs = $('nav a')
             .click(function(){
+                var t = this;
                 setTimeout(function(){
                     if( !supportHashChangeEvent )
-                        renderHash(this.getAttribute('href'));
+                        renderHash(t.getAttribute('href').replace(/[^#]*/ , ''));
                 } , 100);
             });
         var renderHash = function( hash ){

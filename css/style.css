@@ -95,6 +95,7 @@ header{
     margin: 0 auto;
     padding-top: 20px;
     position: relative;
+    overflow: hidden;
 }
 header .logo{ position: absolute;top: 50px;left: 200px;}
 header .lang{ position: absolute;top: 0px;right: 0px; color: white;background: black;padding:2px 10px;}
@@ -111,8 +112,18 @@ header nav a{
 }
 header nav a:hover , header nav a.selected{background: #981f26;}
 
-.bred{background: #e13b34;background: rgba(228,30,38,.7);}
-.bgry{background: #53524c;background: rgba(63,56,55,.7);}
+.bred{background: rgba(228,30,38,.7);
+
+    filter   : progid:DXImageTransform.Microsoft.gradient(startColorStr='#B2E41E26',EndColorStr='#B2E41E26');
+    -ms-filter : progid:DXImageTransform.Microsoft.gradient(startColorStr='#B2E41E26',EndColorStr='#B2E41E26');
+    zoom: 1;
+}
+.bgry{
+    background: rgba(63,56,55,.7);
+    filter   : progid:DXImageTransform.Microsoft.gradient(startColorStr='#B23F3837',EndColorStr='#B23F3837');
+    -ms-filter : progid:DXImageTransform.Microsoft.gradient(startColorStr='#B23F3837',EndColorStr='#B23F3837');
+    zoom: 1;
+}
 .main{color: white;width: 900px; margin: 0 auto;margin-top: 30px;padding:0 50px;}
 
 /***** common style for slider ****/
@@ -136,7 +147,11 @@ header nav a:hover , header nav a.selected{background: #981f26;}
 /** main - events **/
 .main-events{width: 840px;margin: 0 0 0 5px;height: 250px;}
 .events-slider{overflow: hidden;}
-.events-slider li{background: rgba(228,30,38,0.8);}
+.events-slider li{background: rgba(228,30,38,0.8);
+    filter   : progid:DXImageTransform.Microsoft.gradient(startColorStr='#CCE41E26',EndColorStr='#CCE41E26');
+    -ms-filter : progid:DXImageTransform.Microsoft.gradient(startColorStr='#CCE41E26',EndColorStr='#CCE41E26');
+    zoom: 1;
+}
 .events-slider li a {display:block;}
 .events-slider li img{float: right;}
 .events-slider li article{padding: 20px;margin-right:420px;}
@@ -151,7 +166,11 @@ header nav a:hover , header nav a.selected{background: #981f26;}
 /** main - wine **/
 .main-wine{width: 740px;margin: 0 0 0 5px;height: 250px;}
 .wine-slider{overflow: hidden;}
-.wine-slider li{background: rgba(228,30,38,0.8);}
+.wine-slider li{background: rgba(228,30,38,0.8);
+     filter   : progid:DXImageTransform.Microsoft.gradient(startColorStr='#CCE41E26',EndColorStr='#CCE41E26');
+    -ms-filter : progid:DXImageTransform.Microsoft.gradient(startColorStr='#CCE41E26',EndColorStr='#CCE41E26');
+    zoom: 1;
+}
 .wine-slider li:hover {opacity:0.7;}
 .wine-slider li a {display:block;}
 .wine-slider li img{float: right;}
@@ -168,6 +187,7 @@ header nav a:hover , header nav a.selected{background: #981f26;}
     float: left;
     height: 100%;
     overflow: hidden;
+    margin-right: 20px;
 }
 .amet-list li{}
 .amet-list li a {display: block;padding:20px;height:88px;}
@@ -175,7 +195,7 @@ header nav a:hover , header nav a.selected{background: #981f26;}
 .amet-list li h2{margin-bottom: 10px;}
 .amet-list li h2 em{float:right;color: #eee;}
 .main-index{height:256px;}
-.main-index .slider-bar{height:100%;float:left;margin-left: 20px;width:2px;background:#000;opacity:0.5;position: relative;}
+.main-index .slider-bar{height:100%;float:left;width:2px;background:#000;opacity:0.5;position: relative;}
 .main-index .slider-btn{position:absolute;cursor:n-resize;width: 11px;height:45px;background: #e21e26;margin-left:-5px;}
 /**main-offers**/
 .main-offers{
@@ -184,14 +204,25 @@ header nav a:hover , header nav a.selected{background: #981f26;}
 .main-offers > div{
     float: left;
     background: rgba(0,0,0,0.5);
+    filter   : progid:DXImageTransform.Microsoft.gradient(startColorStr='#7F000000',EndColorStr='#7F000000');
+    -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#7F000000',EndColorStr='#7F000000');;
+    zoom: 1;
 }
-.main-offers > div:hover {opacity:0.7;}
+.main-offers > div:hover {opacity:0.7;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+    zoom: 1;
+}
 .main-offers > div a{
-
     display: block;
 }
 .main-offers article {padding:30px;margin-right:368px;}
-.main-offers > div:first-child{background: rgba(228,30,38,0.8);}
+
+.main-offers > div:first-child{background: rgba(228,30,38,0.8);
+    filter   : progid:DXImageTransform.Microsoft.gradient(startColorStr='#CCE41E26',EndColorStr='#CCE41E26');
+    -ms-filter : progid:DXImageTransform.Microsoft.gradient(startColorStr='#CCE41E26',EndColorStr='#CCE41E26');
+    zoom: 1;
+}
 .main-offers h2{
     font-size:21px;
     text-align: center;
@@ -206,6 +237,9 @@ header nav a:hover , header nav a.selected{background: #981f26;}
 /***main-photos***/
 .main-photos {
     background: rgba( 0 , 0 ,0 , .5);
+    filter   : progid:DXImageTransform.Microsoft.gradient(startColorStr='#7F000000',EndColorStr='#7F000000');
+    -ms-filter : progid:DXImageTransform.Microsoft.gradient(startColorStr='#7F000000',EndColorStr='#7F000000');
+    zoom: 1;
     width: 528px;
     padding: 20px 20px 10px 20px;
 }
@@ -267,10 +301,15 @@ header nav a:hover , header nav a.selected{background: #981f26;}
     font-size:11px;
 }
 
-footer{background: rgba(198,38,43,0.9); padding: 30px 0;position: fixed; bottom:0; width: 100%;}
+footer{background: rgba(198,38,43,0.9); padding: 30px 0;position: fixed; bottom:0; width: 100%;
+    filter   : progid:DXImageTransform.Microsoft.gradient(startColorStr='#E5C6262B',EndColorStr='#E5C6262B');
+    -ms-filter : progid:DXImageTransform.Microsoft.gradient(startColorStr='#E5C6262B',EndColorStr='#E5C6262B');
+    zoom: 1;
+}
 footer .footer{width: 1000px;margin:0 auto;color: #eee;}
 footer .share{
     float: right;
+    width: 100px;
 }
 footer .address , footer .tel{ float:left; margin:0 20px;}
 footer .share .facebook , footer .share .twitter{float:right; width: 16px;height:16px;background: url(../img/share.png) no-repeat;}
@@ -286,3 +325,9 @@ footer .share a:hover {opacity:0.7;}
 a,
 .main .bx-wrapper .bx-prev:hover,.main .bx-wrapper .bx-next:hover
 {-webkit-transition:   all 0.3s ease;-moz-transition:  all 0.3s ease;-o-transition:  all 0.3s ease;-ms-transition:  all 0.3s ease;transition:  all 0.3s ease;}
+
+
+
+.main-events .bx-viewport{
+    height: 244px !important;
+}

@@ -25,10 +25,12 @@ seajs.config({
         deps: ['jquery' , '../bgstretcher-2/bgstretcher.css']
     }
       ,"jquery.fancybox" : {
-          src: '../jquery-plugin/slider/jquery.fancybox.pack'
+          src: '../jquery-plugin/slider/jquery.fancybox.pack',
+          deps: ['jquery']
       }
       ,"jquery.cloudzoom" : {
-          src: '../cloudzoom/cloudzoom'
+          src: '../cloudzoom/cloudzoom',
+          deps: ['jquery']
       }
   }
   ,
